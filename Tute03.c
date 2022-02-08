@@ -14,6 +14,22 @@ sum = 1+2+3+...+10 = 55 */
 #include <stdio.h>
 int main() {
   
-  return 0;
+  //declair variables
+  int n, count=1, sum=0;
+
+  //get user inputs
+  printf("Number for N:");
+  scanf("%d", &n);
+  
+  //calculation
+while (count<=n)
+{
+  sum=sum+count;
+  count++;
+}
+//output
+printf("sum of the numbers 1 to %d is %d", n, sum);
+
+ return 0;
 }
 
